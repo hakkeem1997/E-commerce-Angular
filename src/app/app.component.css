@@ -1,0 +1,15 @@
+.heade{
+    height:60px;
+    background: #e6eba4;
+}
+.head{
+    background:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+
+}
+img{
+    height: 20px;
+    width: 20px;
+}
