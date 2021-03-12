@@ -1,0 +1,38 @@
+ <img src="">
+ <div>{{'Add products'}}</div><br><br>
+ <!-- ID:<br><input  type="text" [(ngModel)]='identifier'><br> -->
+Image URL:<br> <input  type="text" [(ngModel)]='prct'><br>
+Product Name: <br><input type="text" [(ngModel)]='descript'><br>
+ Price:<br> <input type="text" [(ngModel)]='price'><br>
+
+ <button (click)="toadd()">addto</button>
+
+<table border="5px">
+    <tr>
+        <th>ID</th>
+        <th> products</th>
+        <th> description</th>
+        <th>price</th>
+    </tr>
+
+    <tr *ngFor="let x of products; let i = index">
+        <td>{{i+1}}</td>
+        <td>
+            <img [src]="x.product">
+        </td>
+        <td>
+            {{x.description}}
+        </td>
+        <td>
+            {{x.prices}} 
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+</table>
+ 
+ 
+
+
+

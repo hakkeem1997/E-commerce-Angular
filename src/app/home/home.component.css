@@ -1,0 +1,19 @@
+table{
+    display: flex;
+}
+.images{
+    flex-direction: row;
+}
+.price{
+margin-left: -50%;
+}
+.left{
+    margin-left: 30%;
+}
+img{
+    width: 100%;
+    height: 100%;
+
+}
+
+

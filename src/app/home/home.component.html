@@ -1,0 +1,35 @@
+<!-- <img src= id="ap"> -->
+<table>
+  
+    <tr *ngFor="let p of products ; let i = index" >
+       
+        <td class="images">
+            <img [src]="p.product">
+        </td><br>
+        <td>
+            ID:{{i+1}}
+        </td>
+        <br>
+        <td class="left">
+            {{p.description}}
+            
+        </td><br>
+        <td class="price">{{p.prices |currency:"INR" }}</td>
+        <br>
+        
+        <td>
+        <!-- <button  (click)="add(i)">+</button> -->
+        <input  type="number" [(ngModel)]='qty'  value={{count}} id="qty">
+        <!-- <button (click)="sub()">-</button> -->
+        </td>
+        <td id="cart">
+            
+        <button id="addcart()" >add to cart</button> 
+        </td>
+          
+        
+       
+    </tr>     
+    
+</table>
+
